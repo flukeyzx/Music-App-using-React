@@ -1,0 +1,29 @@
+nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  h1 {
+    cursor: pointer;
+  }
+  button {
+    background: transparent;
+    padding: 0.5rem;
+    cursor: pointer;
+    border: none;
+    border: 2px solid rgb(65, 65, 65);
+    transition: all 0.3s ease;
+    &:hover {
+      color: white;
+      background-color: rgb(65, 65, 65);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    button {
+      z-index: 10;
+    }
+  }
+}
